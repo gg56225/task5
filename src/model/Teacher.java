@@ -2,8 +2,8 @@ package model;
 
 public class Teacher extends User {
 
-    public Teacher(String firstName, String lastName, String middlename, int teacherId) {
-        super(firstName, lastName, middlename);
+    public Teacher(String firstName, String lastName, String middleName, int teacherId) {
+        super(firstName, lastName, middleName);
         this.teacherId = teacherId;
     }
 
@@ -17,3 +17,4 @@ public class Teacher extends User {
         this.teacherId = teacherId;
     }
 }
+

@@ -2,15 +2,24 @@ package model;
 
 public abstract class User {
 
-    public User(String firstName, String lastName, String middlename) {
+    public User(String firstName, String lastName, String middleName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.middlename = middlename;
+        this.middleName = middleName;
     }
 
     private String firstName;
     private String lastName;
-    private String middlename;
+    private String middleName;
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -28,11 +37,12 @@ public abstract class User {
         this.lastName = lastName;
     }
 
-    public String getMiddlename() {
-        return middlename;
+    public String getMiddleName() {
+        return middleName;
     }
 
-    public void setMiddlename(String middlename) {
-        this.middlename = middlename;
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
     }
 }
+

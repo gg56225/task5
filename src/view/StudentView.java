@@ -7,3 +7,4 @@ public class StudentView {
         System.out.println(student.toString());
     }
 }
+
